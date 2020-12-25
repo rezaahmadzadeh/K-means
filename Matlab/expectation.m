@@ -9,7 +9,8 @@ Output:
     X: the dataset with updated labels
 %}
 
-[numPoints, numClusters] = size(X);
+[numPoints, ~] = size(X);
+numClusters = max(X(:,3));
 
 % define a function to calculate the distance between a set of points and a
 % mean
