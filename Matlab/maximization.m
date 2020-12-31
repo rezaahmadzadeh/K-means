@@ -9,7 +9,7 @@ Output:
     Mu: updated centers
 %}
 
-numCluster = max(X(:,3));
+numClusters = max(X(:,3));
 
 Mu = zeros(numClusters, 2);
 for jj = 1:numClusters
